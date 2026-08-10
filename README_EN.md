@@ -46,8 +46,7 @@ Repo id: `2.13-amoled-410x502-mipi-st7801`
 
 <p align="center"><img alt="AM213Q410502LK1" src="./images/AM213Q410502LK1.png" width="320" /></p>
 
-**Notes:** Module.
-
+**Notes:** With touch (CST820).
 ---
 
 ## How to Switch Branches
