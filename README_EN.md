@@ -2,9 +2,9 @@
 
 <h1 align="center">OSPTEK 2.13″ AMOLED 410×502 (ST7801 · MIPI)</h1>
 
-<p align="center"><b>AMOLED module · MIPI · ST7801 · capacitive touch</b></p>
+<p align="center"><b>AMOLED module · MIPI · ST7801 · Multi-Version Index</b></p>
 
-<p align="center"><a href="./README.md">简体中文</a> | English</p>
+<p align="center">English | <a href="./README.md">简体中文</a></p>
 
 <p align="center">
   <img alt="Size: 2.13 inch" src="https://img.shields.io/badge/Size-2.13%22-3498DB?style=flat-square" />
@@ -13,94 +13,61 @@
   <img alt="Driver: ST7801" src="https://img.shields.io/badge/Driver-ST7801-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 2.13 inch 410×502 AMOLED MIPI module (ST7801) product image" src="./images/product.png" width="640" /></p>
-
 ## Contents
 
-- [Overview](#overview)
-- [Specifications](#specifications)
-- [Sample projects](#sample-projects)
-- [Repository layout](#repository-layout)
-- [Resources](#resources)
-- [Buy](#buy)
+- [About](#about)
+- [Versions](#versions)
+- [AM213Q410502LK1](#am213q410502lk1)
+- [How to Switch Branches](#how-to-switch-branches)
+- [Where to Buy](#where-to-buy)
 - [Support](#support)
 
 ---
 
-## Overview
+## About
 
-OSPTEK **2.13″ 410×502 AMOLED** is a **MIPI** color display module driven by **ST7801N**, with capacitive touch (**CST820**). Suited to handheld devices, wearables, and compact portrait HMI.
+This repository holds materials for the **2.13″ 410×502 AMOLED (MIPI · ST7801)** module family.
 
-Spec ID (repository name): `2.13-amoled-410x502-mipi-st7801`
+**`main` is the navigation page** (repository default). Use the table below for a quick scan; click **Details** to jump to the section on this page. For a given version’s full content, switch to that **version branch** (see below).
 
-Current module version: **AM213Q410502LK1**. Electrical and mechanical details follow [`docs/AM213Q410502LK1.pdf`](./docs/AM213Q410502LK1.pdf).
+Repo id: `2.13-amoled-410x502-mipi-st7801`
 
-## Specifications
+---
 
-| Item | Spec |
-| ---- | ---- |
-| Size | 2.13 inch |
-| Type | AMOLED (color) |
-| Resolution | 410×502 |
-| Interface | MIPI |
-| Driver IC | ST7801N |
-| Touch driver | CST820 |
+## Versions
 
-> Full outline, FPC definition, power, and timing follow the product datasheet / driver IC datasheet.
+| Version | Image | Notes |
+| ------- | ----- | ----- |
+| AM213Q410502LK1 | <img alt="AM213Q410502LK1" src="./images/AM213Q410502LK1.png" width="120" /> | [Details](#am213q410502lk1) |
 
-## Sample projects
+---
 
-| Description | Path |
-| ---- | ---- |
-| ESP32-P4 · ST7801 MIPI + esp-lvgl-port / LVGL9 | [`examples/P4-IDF_ST7801-MIPI_ESP-LVGL-PORT_V9/`](./examples/P4-IDF_ST7801-MIPI_ESP-LVGL-PORT_V9/) |
-| ESP32-P4 · LVGL + TE | [`examples/with-te/p4-idf_st7801-mipi_lvgl_common_demo/`](./examples/with-te/p4-idf_st7801-mipi_lvgl_common_demo/) |
-| ESP32-P4 · EAF player | [`examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/`](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/) |
-| ESP32-P4 · ST7801 MIPI display test | [`examples/display-touch-test/st7801_mipi_dsi/`](./examples/display-touch-test/st7801_mipi_dsi/) |
-| ESP32-P4 · CST820 touch I2C test | [`examples/display-touch-test/P4-IDF_CST820-I2C/`](./examples/display-touch-test/P4-IDF_CST820-I2C/) |
+## AM213Q410502LK1
 
-## Repository layout
+<p align="center"><img alt="AM213Q410502LK1" src="./images/AM213Q410502LK1.png" width="320" /></p>
 
-```text
-2.13-amoled-410x502-mipi-st7801/
-├── README.md
-├── README_EN.md
-├── MODULE_VERSION.md
-├── LICENSE
-├── images/          # README assets
-├── docs/            # datasheets, init, adapter schematic
-└── examples/        # sample projects
-```
+**Notes:** Module.
 
-## Resources
+---
 
-### Product files
+## How to Switch Branches
 
-| Resource | Link |
-| ---- | ---- |
-| Product datasheet (AM213Q410502LK1) | [`docs/AM213Q410502LK1.pdf`](./docs/AM213Q410502LK1.pdf) |
-| Outline drawing (AM213Q410502LK1) | [`docs/AM213Q410502LK1_外形图.pdf`](./docs/AM213Q410502LK1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
-| Driver IC datasheet (ST7801N) | [`docs/ST_7801_N_Data_Sheet_V0_3_78db6a8826.pdf`](./docs/ST_7801_N_Data_Sheet_V0_3_78db6a8826.pdf) |
-| Touch IC datasheet (CST820) | [`docs/CST820_Datasheet_V1.2.pdf`](./docs/CST820_Datasheet_V1.2.pdf) |
-| Init sequence (text) | [`docs/GVO2.06_410x502_ST7801N_Mipi_简码.txt`](./docs/GVO2.06_410x502_ST7801N_Mipi_%E7%AE%80%E7%A0%81.txt) |
-| 2.13″ AMOLED adapter schematic | [`docs/2.13寸AMOLED转接板.png`](./docs/2.13%E5%AF%B8AMOLED%E8%BD%AC%E6%8E%A5%E6%9D%BF.png) |
+Full product materials are on each **version branch**; `main` is navigation only.
 
-### Samples
+- **Web:** open the branch dropdown at the top left of the repository page and select the branch that matches your part number.
+- **CLI:** after cloning, run `git checkout <version-branch>`; if the repo is already local, `git fetch` first, then switch.
 
-- [ESP32-P4 ST7801 MIPI + LVGL9](./examples/P4-IDF_ST7801-MIPI_ESP-LVGL-PORT_V9/)
-- [ESP32-P4 LVGL + TE](./examples/with-te/p4-idf_st7801-mipi_lvgl_common_demo/)
-- [ESP32-P4 EAF](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/)
-- [ESP32-P4 display test](./examples/display-touch-test/st7801_mipi_dsi/)
-- [ESP32-P4 CST820 touch test](./examples/display-touch-test/P4-IDF_CST820-I2C/)
+---
 
-## Buy
+## Where to Buy
 
 <p align="center">
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress store" src="https://img.shields.io/badge/AliExpress-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="AliExpress Official Store" src="https://img.shields.io/badge/AliExpress-Official_Store-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
   &nbsp;&nbsp;
-  <a href="https://shop110742373.taobao.com/"><img alt="Taobao store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
+  <a href="https://shop110742373.taobao.com/"><img alt="Taobao Official Store" src="https://img.shields.io/badge/Taobao-Official_Store-FF6A00?style=for-the-badge" /></a>
 </p>
 
-**Overseas (AliExpress)**
+**International (AliExpress)**
 
 - Store: [OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
 
@@ -108,13 +75,15 @@ Current module version: **AM213Q410502LK1**. Electrical and mechanical details f
 
 - Store: [鱼鹰光电工厂店](https://shop110742373.taobao.com/)
 
+---
+
 ## Support
 
-- Technical support / product inquiry: <luyu@osptek.com>
-- QQ group: **985881096**
+- Technical Support / Sales: <luyu@osptek.com>
+- QQ Technical Group: **985881096**
 - Website: <https://osptek.com/>
-- Feel free to open an Issue in this repository with any questions
+- Feel free to open an Issue in this repository if you have any questions
 
 ---
 
-<p align="center"><sub>© 2026 OSPTEK · Materials in this repository are licensed under CC BY 4.0</sub></p>
+<p align="center"><sub>© 2026 OSPTEK · Licensed under CC BY 4.0</sub></p>

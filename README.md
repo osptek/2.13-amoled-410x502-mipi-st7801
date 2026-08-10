@@ -2,7 +2,7 @@
 
 <h1 align="center">OSPTEK 2.13″ AMOLED 410×502（ST7801 · MIPI）</h1>
 
-<p align="center"><b>AMOLED 模组 · MIPI · ST7801 · 电容触摸</b></p>
+<p align="center"><b>AMOLED 模组 · MIPI · ST7801 · 多版本索引</b></p>
 
 <p align="center"><a href="./README_EN.md">English</a> | 简体中文</p>
 
@@ -13,91 +13,58 @@
   <img alt="Driver: ST7801" src="https://img.shields.io/badge/Driver-ST7801-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 2.13 寸 410×502 AMOLED MIPI 模组（ST7801）宣传图" src="./images/product.png" width="640" /></p>
-
 ## 目录
 
-- [产品简介](#产品简介)
-- [规格参数](#规格参数)
-- [示例工程](#示例工程)
-- [仓库结构](#仓库结构)
-- [相关资料](#相关资料)
+- [说明](#说明)
+- [版本一览](#版本一览)
+- [AM213Q410502LK1](#am213q410502lk1)
+- [如何切换分支](#如何切换分支)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
 ---
 
-## 产品简介
+## 说明
 
-OSPTEK **2.13 寸 410×502 AMOLED** 是一款 **MIPI** 接口彩色显示模组，显示驱动为 **ST7801N**，触摸驱动为 **CST820**。适合手持终端、穿戴与小型竖屏 HMI 等场景。
+本仓库收录 **2.13 寸 410×502 AMOLED（MIPI · ST7801）** 显示模组资料。
+
+**`main` 为导航页**（仓库默认分支）。下表可快速浏览各版本；点击「说明」跳转到本页下方的详细介绍。需要某一版本的完整内容时，请切换到对应**版本分支**（方法见下文）。
 
 规格标识（仓库名）：`2.13-amoled-410x502-mipi-st7801`
 
-当前模组版本：**AM213Q410502LK1**。电气与外形细节以 [`docs/AM213Q410502LK1.pdf`](./docs/AM213Q410502LK1.pdf) 为准。
+---
 
-## 规格参数
+## 版本一览
 
-| 项目 | 规格 |
-| ---- | ---- |
-| 尺寸 | 2.13 英寸 |
-| 类型 | AMOLED（彩色） |
-| 分辨率 | 410×502 |
-| 接口 | MIPI |
-| 驱动 IC | ST7801N |
-| 触摸驱动 | CST820 |
+| 版本 | 宣传图 | 说明 |
+| ---- | ------ | ---- |
+| AM213Q410502LK1 | <img alt="AM213Q410502LK1" src="./images/AM213Q410502LK1.png" width="120" /> | [查看详情](#am213q410502lk1) |
 
-> 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。
+---
 
-## 示例工程
+## AM213Q410502LK1
 
-| 说明 | 路径 |
-| ---- | ---- |
-| ESP32-P4 · ST7801 MIPI + esp-lvgl-port / LVGL9 | [`examples/P4-IDF_ST7801-MIPI_ESP-LVGL-PORT_V9/`](./examples/P4-IDF_ST7801-MIPI_ESP-LVGL-PORT_V9/) |
-| ESP32-P4 · LVGL + TE 防撕裂 | [`examples/with-te/p4-idf_st7801-mipi_lvgl_common_demo/`](./examples/with-te/p4-idf_st7801-mipi_lvgl_common_demo/) |
-| ESP32-P4 · EAF 播放 | [`examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/`](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/) |
-| ESP32-P4 · ST7801 MIPI 显示测试 | [`examples/display-touch-test/st7801_mipi_dsi/`](./examples/display-touch-test/st7801_mipi_dsi/) |
-| ESP32-P4 · CST820 触摸 I2C 测试 | [`examples/display-touch-test/P4-IDF_CST820-I2C/`](./examples/display-touch-test/P4-IDF_CST820-I2C/) |
+<p align="center"><img alt="AM213Q410502LK1" src="./images/AM213Q410502LK1.png" width="320" /></p>
 
-## 仓库结构
+**说明：** 模组。
 
-```text
-2.13-amoled-410x502-mipi-st7801/
-├── README.md
-├── README_EN.md
-├── MODULE_VERSION.md
-├── LICENSE
-├── images/          # README 用图
-├── docs/            # 规格书、触摸手册、初始化、转接板等
-└── examples/        # 示例工程
-```
+---
 
-## 相关资料
+## 如何切换分支
 
-### 本产品资料
+完整产品资料在各**版本分支**中；`main` 仅作导航。
 
-| 资料 | 链接 |
-| ---- | ---- |
-| 产品规格书（AM213Q410502LK1） | [`docs/AM213Q410502LK1.pdf`](./docs/AM213Q410502LK1.pdf) |
-| 外形图（AM213Q410502LK1） | [`docs/AM213Q410502LK1_外形图.pdf`](./docs/AM213Q410502LK1_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
-| 驱动 IC 数据手册（ST7801N） | [`docs/ST_7801_N_Data_Sheet_V0_3_78db6a8826.pdf`](./docs/ST_7801_N_Data_Sheet_V0_3_78db6a8826.pdf) |
-| 触摸 IC 数据手册（CST820） | [`docs/CST820_Datasheet_V1.2.pdf`](./docs/CST820_Datasheet_V1.2.pdf) |
-| 初始化序列（文本） | [`docs/GVO2.06_410x502_ST7801N_Mipi_简码.txt`](./docs/GVO2.06_410x502_ST7801N_Mipi_%E7%AE%80%E7%A0%81.txt) |
-| 2.13 寸 AMOLED 转接板原理图 | [`docs/2.13寸AMOLED转接板.png`](./docs/2.13%E5%AF%B8AMOLED%E8%BD%AC%E6%8E%A5%E6%9D%BF.png) |
+- **网页：** 在仓库页左上角打开分支下拉框，选择与料号对应的版本分支即可。
+- **命令行：** 克隆本仓库后执行 `git checkout <版本分支名>`；若本地已有仓库，先 `git fetch` 再切换。
 
-### 示例工程
-
-- [ESP32-P4 ST7801 MIPI + LVGL9](./examples/P4-IDF_ST7801-MIPI_ESP-LVGL-PORT_V9/)
-- [ESP32-P4 LVGL + TE](./examples/with-te/p4-idf_st7801-mipi_lvgl_common_demo/)
-- [ESP32-P4 EAF](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/)
-- [ESP32-P4 显示测试](./examples/display-touch-test/st7801_mipi_dsi/)
-- [ESP32-P4 CST820 触摸测试](./examples/display-touch-test/P4-IDF_CST820-I2C/)
+---
 
 ## 购买链接
 
 <p align="center">
   <a href="https://shop110742373.taobao.com/"><img alt="淘宝官方店铺" src="https://img.shields.io/badge/淘宝-官方店铺-FF6A00?style=for-the-badge" /></a>
   &nbsp;&nbsp;
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
 </p>
 
 **国内（淘宝）**
@@ -107,6 +74,8 @@ OSPTEK **2.13 寸 410×502 AMOLED** 是一款 **MIPI** 接口彩色显示模组�
 **海外（AliExpress）**
 
 - 店铺：[OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+---
 
 ## 技术支持
 
