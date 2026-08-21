@@ -57,6 +57,9 @@ Current module version: **AM213Q410502LK1**. Electrical and mechanical details f
 | ESP32-P4 · EAF player | [`examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/`](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/) |
 | ESP32-P4 · ST7801 MIPI display test | [`examples/display-touch-test/st7801_mipi_dsi/`](./examples/display-touch-test/st7801_mipi_dsi/) |
 | ESP32-P4 · CST820 touch I2C test | [`examples/display-touch-test/P4-IDF_CST820-I2C/`](./examples/display-touch-test/P4-IDF_CST820-I2C/) |
+| Raspberry Pi 5 · ST7801 410×502 panel / DT overlay (display only) | [`examples/rpi5-panel-st7801-410x502/`](./examples/rpi5-panel-st7801-410x502/) |
+| Raspberry Pi 5 · CST820 touch / DT overlay (touch only) | [`examples/rpi5-touch-cst820/`](./examples/rpi5-touch-cst820/) |
+| Raspberry Pi 5 · ST7801 display + CST820 touch / DT overlay | [`examples/rpi5-panel-st7801-cst820-410x502/`](./examples/rpi5-panel-st7801-cst820-410x502/) |
 
 ## Repository layout
 
@@ -91,6 +94,9 @@ Current module version: **AM213Q410502LK1**. Electrical and mechanical details f
 - [ESP32-P4 EAF](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/)
 - [ESP32-P4 display test](./examples/display-touch-test/st7801_mipi_dsi/)
 - [ESP32-P4 CST820 touch test](./examples/display-touch-test/P4-IDF_CST820-I2C/)
+- [Raspberry Pi 5 ST7801 panel (display only)](./examples/rpi5-panel-st7801-410x502/)
+- [Raspberry Pi 5 CST820 touch (touch only)](./examples/rpi5-touch-cst820/)
+- [Raspberry Pi 5 ST7801 display + CST820 touch](./examples/rpi5-panel-st7801-cst820-410x502/)
 
 ## Buy
 

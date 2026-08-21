@@ -57,6 +57,9 @@ OSPTEK **2.13 寸 410×502 AMOLED** 是一款 **MIPI** 接口彩色显示模组�
 | ESP32-P4 · EAF 播放 | [`examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/`](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/) |
 | ESP32-P4 · ST7801 MIPI 显示测试 | [`examples/display-touch-test/st7801_mipi_dsi/`](./examples/display-touch-test/st7801_mipi_dsi/) |
 | ESP32-P4 · CST820 触摸 I2C 测试 | [`examples/display-touch-test/P4-IDF_CST820-I2C/`](./examples/display-touch-test/P4-IDF_CST820-I2C/) |
+| Raspberry Pi 5 · ST7801 410×502 面板驱动 / DT overlay（仅显示） | [`examples/rpi5-panel-st7801-410x502/`](./examples/rpi5-panel-st7801-410x502/) |
+| Raspberry Pi 5 · CST820 触摸驱动 / DT overlay（仅触摸） | [`examples/rpi5-touch-cst820/`](./examples/rpi5-touch-cst820/) |
+| Raspberry Pi 5 · ST7801 显示 + CST820 触摸 / DT overlay | [`examples/rpi5-panel-st7801-cst820-410x502/`](./examples/rpi5-panel-st7801-cst820-410x502/) |
 
 ## 仓库结构
 
@@ -91,6 +94,9 @@ OSPTEK **2.13 寸 410×502 AMOLED** 是一款 **MIPI** 接口彩色显示模组�
 - [ESP32-P4 EAF](./examples/eaf/p4-idf_st7801-mipi_esp-lv-eaf-player/)
 - [ESP32-P4 显示测试](./examples/display-touch-test/st7801_mipi_dsi/)
 - [ESP32-P4 CST820 触摸测试](./examples/display-touch-test/P4-IDF_CST820-I2C/)
+- [Raspberry Pi 5 ST7801 面板（仅显示）](./examples/rpi5-panel-st7801-410x502/)
+- [Raspberry Pi 5 CST820 触摸（仅触摸）](./examples/rpi5-touch-cst820/)
+- [Raspberry Pi 5 ST7801 显示 + CST820 触摸](./examples/rpi5-panel-st7801-cst820-410x502/)
 
 ## 购买链接
 
